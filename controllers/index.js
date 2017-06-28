@@ -8,8 +8,4 @@ router.get('/', function( req, res) {
   res.sendFile(path.join(__dirname + '/../client/build/index.html'));
 });
 
-router.get('/about', function(req, res){
-  res.json({data: "All about some films"});
-})
-
 module.exports = router;
